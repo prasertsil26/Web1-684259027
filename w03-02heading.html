@@ -41,11 +41,25 @@
             padding: 50px 20px;
         }
 
-        .text-title {
+        .hero h1 {
             color: rgb(21, 47, 194);
             font-size: 48px;
             /*text-align: center;*/
         }
+
+        .hero p {
+            color: rgb(87, 87, 108);
+            font-size: 22px;
+         
+        }
+
+
+        .text-color {
+            color: rgb(3, 136, 202);
+            font-weight: bold;
+
+        }
+
 
         .text-center {
             text-align: center;
@@ -53,17 +67,40 @@
 
         .card {
             background-color: aliceblue;
-            padding: 50px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px;
+            /* padding: 50px; */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgb(61, 85, 107); /* เงาของกรอบ */
             margin-bottom: 20px;
+
+            border: 1px solid rgb(0, 98, 255); /* เส้นขอบ */
+            overflow: hidden; /* ส่วนที่เกิน */
 
         }
 
+        .card-heaber {
+            background-color: rgb(174, 239, 242);
+            color: rgb(17, 0, 255);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 40px;
+            
+        }
+
+        .card-body {
+            padding: 40px;
+        }
+
+        .card-margin-bt { margin-bottom: 15px; } /* ระยะห่าง */
+
         .label{
-            padding: 2px 6px;
-            border-radius: 4px;
-            color: aliceblue;
+            padding: 4px 9px; /* ขนาดของกล่อง */
+            border-radius: 7px; /* ทุกกล่องมีความโค้งเหมือนกัน*/
+            color: aliceblue; /* ฟอนต์สีขวา*/
+            font-weight: bold; /* ฟอนต์ตัวหนา*/
+            text-align: center; /* ให้ฟอนต์อยู่ตรงกลาง*/
+            /* ที่ไม่เหมือนกันคือสีพื้นหลัง ต้องตั้งชื่อขึ้นมาเช่น h1 */
+        /* span ใช้สำหรับแยกข้อความ เช่นต้องการให้ฟอนต์ h1 มีสีพื้นหลัง แต่ข้อความไม่มีสี*/
+        
         }
         .h1-label {background-color: rgb(0, 38, 255);}
         .h2-label {background-color: rgb(0, 212, 195);}
@@ -73,23 +110,51 @@
         .h6-label {background-color: rgb(255, 0, 255);}
 
         pre {
-            background-color: rgb(179, 166, 166);
-            border-left: 4px solid red;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             padding: top 10px;
             font-size: 16px;
+            border-radius: 10px;
 
         }
 
+        .text-shade {
+            padding: 20px;
+            background-color: rgba(235, 226, 166, 0.581);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .text-shade h1 {color: rgb(1, 3, 49);}
+        .text-shade h2 {color: rgb(2, 1, 79);}
+        .text-shade h3 {color: rgb(0, 8, 121);}
+        .text-shade h4 {color: rgb(29, 40, 188);}
+        .text-shade h5 {color: rgb(102, 114, 245);}
+        .text-shade h6 {color: rgb(130, 139, 239);}
+
         .note {
             color: rgb(0, 0, 0);
-            background-color: rgb(187, 171, 233);
+            background-color: rgba(204, 196, 228, 0.442);
+            padding: 10px 20px;
         }
 
         .note::before {
             content: "📌";
         }
 
+        .tip-box {
+            background-color: rgba(255, 163, 64, 0.653);
+            /* padding: 50px; */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(245, 147, 62); /* เงาของกรอบ */
+            border: 1px solid rgb(255, 149, 0); /* เส้นขอบ */
+           
+            margin-bottom: 20px;
+            padding: 20px;
+            
+            /* strong คือความหนาของฟอนต์จะเน้นกว่า b */
 
+        }   
 
 
 
@@ -103,44 +168,73 @@
 
     </section>
 
+
+    
     <div class="container">
+
+
+        <!-- hero section -->
         <div class="hero">
-            <h1 class="text-title">Workshop: HTML Heading</h1>
-            <p>ฝึกใช้แท็ก&lt;h1> – &lt;h6> และการปรับขนาดหัวข้อด้วย CSS</p>
+            <h1 >Workshop: HTML Heading</h1>
+            <p >ฝึกใช้แท็ก <span class="text-color">&lt;h1></span> – <span class="text-color">&lt;h6></span> และการปรับขนาดหัวข้อด้วย CSS</p>
         </div>
+
+
+        <!-- card 1 -->
         <div class="card">
-            <h2> 1. ความหมายของ Headings (H1–H6)</h2>
-            <p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
-            <ul>
-                <li><span class="label h1-label">H1</span> – หัวข้อใหญ่สุด ใช้สำหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
-                <li><span class="label h2-label">H2</span> – หัวข้อรอง แบ่ง Section ของเนื้อหา</li>
-                <li><span class="label h3-label">H3</span> – หัวข้อย่อยภายใน H2</li>
-                <li><span class="label h4-label">H4</span> – ย่อยลงไปอีกระดับ</li>
-                <li><span class="label h5-label">H5</span> – ใช้น้อย แต่เน้นลำดับข้อมูล</li>
-                <li><span class="label h6-label">H6</span> – เล็กสุด ใช้กับหัวข้อระดับลึก</li>
-            </ul>
-            <p class="note" style="border-left: 4px solid red;">💡H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO
-                และโครงสร้างเอกสาร</p>
+            <div class="card-heaber">
+                <h2> 1. ความหมายของ Headings (H1–H6)</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-margin-bt">HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
+                
+                
+                    <p class="card-margin-bt"><span class="label h1-label">H1</span> – หัวข้อใหญ่สุด ใช้สำหรับชื่อหน้าเว็บหรือหัวข้อหลัก</p>
+                    <p class="card-margin-bt"><span class="label h2-label">H2</span> – หัวข้อรอง แบ่ง Section ของเนื้อหา</p>
+                    <p class="card-margin-bt"><span class="label h3-label">H3</span> – หัวข้อย่อยภายใน H2</p>
+                    <p class="card-margin-bt"><span class="label h4-label">H4</span> – ย่อยลงไปอีกระดับ</p>
+                    <p class="card-margin-bt"><span class="label h5-label">H5</span> – ใช้น้อย แต่เน้นลำดับข้อมูล</p>
+                    <p class="card-margin-bt"><span class="label h6-label">H6</span> – เล็กสุด ใช้กับหัวข้อระดับลึก</p>
+                
+                <p class="note" style="border-left: 4px solid rgb(255, 0, 0);">💡H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO
+                    และโครงสร้างเอกสาร</p>
+            </div>
         </div>
+
+
+
+        <!-- card 2 -->
         <div class="card">
-            <h2>2. ตัวอย่างการใช ้H1–H6</h2>
-            <pre>
-            <code>
-        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
-        &lt;h2&gt;HTML Basics&lt;/h2&gt;
-        &lt;h3&gt;What is HTML?&lt;/h3&gt;
-        &lt;h4&gt;HTML Syntax&lt;/h4&gt;
-        &lt;h5&gt;Example Code&lt;/h5&gt;
-        &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
-            </code>
-        </pre>
-            <h1>H1: Welcome to My Website</h1>
-            <h2>H2: HTML Basics</h2>
-            <h3>H3: What is HTML?</h3>
-            <h4>H4: HTML Syntax</h4>
-            <h5>H5: Example Code</h5>
-            <h6 class="note">H6: Note about heading size</h6>
+            <div class="card-header">
+                <h2>2. ตัวอย่างการใช ้H1–H6</h2>
+            </div>
+            <div class="card-body">
+                <pre>
+                <code>
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;h2&gt;HTML Basics&lt;/h2&gt;
+    &lt;h3&gt;What is HTML?&lt;/h3&gt;
+    &lt;h4&gt;HTML Syntax&lt;/h4&gt;
+    &lt;h5&gt;Example Code&lt;/h5&gt;
+    &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
+                </code>
+                        </pre>
+                <div class="text-shade">
+                    <h1>H1: Welcome to My Website</h1>
+                    <h2>H2: HTML Basics</h2>
+                    <h3>H3: What is HTML?</h3>
+                    <h4>H4: HTML Syntax</h4>
+                    <h5>H5: Example Code</h5>
+                    <h6>H6: Note about heading size</h6>
+                </div>
+            </div>
         </div>
+
+        <!-- card 3 -->
+    <div class="tip-box">
+        <p><strong>Tip: </strong>Use only one &lt;h1&gt; per page - it represents the main topic or title.</p>
+        <p><strong>Note:</strong> Use HTML headings for headings only. Don't use headings to make text BIG or bold.</p>
+    </div>
 
     </div>
 

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formatting</title>
+<link rel="stylesheet" href="css/w04-formatting.css">
+</head>
+<body>
+
+<!-- Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">🧿</div>
+      <div>
+        <h2>เรียนรู้เว็บเบื้องต้น</h2>
+        <p>Web Development Basics</p>
+      </div>
+    </div>
+    <nav><!--คือส่วนของเมนูนำทาง-->
+      <a href="index.html">Home</a>
+      <a href="W03-02heading.html">Heading</a>
+      <a href="W04-01-formating.html">Formatting</a>
+      <a href="#">Links</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-icon">&lt;/&gt;</div>
+    <div class="hero-text">
+      <h1>แบบฝึกปฏิบัติ: HTML Formatting</h1>
+      <p>เรียนรู้การจัดรูปแบบข้อความด้วยแท็ก HTML พร้อมตัวอย่างและการตกแต่งด้วย CSS</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="card-grid">
+
+      <!-- Card 1-->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">📄</span> ตัวอย่างผลลัพธ์
+        </div>
+        <div class="card-body">
+
+          <div class="format-row">
+            <span class="label b-label">B:</span>
+            <span class="format-text bold">ข้อความตัวหนา</span>
+          </div>
+
+          <div class="format-row">
+            <span class="label strong-label">STRONG:</span>
+            <span class="format-text bold">ข้อความสำคัญ</span>
+          </div>
+
+          <div class="format-row">
+            <span class="label i-label">I:</span>
+            <span class="format-text italic">ข้อความตัวเอียง</span>
+          </div>
+
+          <div class="format-row">
+            <span class="label em-label">EM:</span>
+            <span class="format-text italic">ข้อความเน้นเสียง</span>
+          </div>
+
+          <div class="format-row">
+            <span class="label u-label">U:</span>
+            <span class="format-text underline">ข้อความขีดเส้นใต้</span>
+          </div>
+
+          <div class="format-row">
+            <span class="label mark-label">MARK:</span>
+            <span class="format-text mark-text">ข้อความที่ถูกเน้น</span>
+          </div>
+
+          <div class="format-row">
+            <span class="label small-label">SMALL:</span>
+            <span class="format-text small-text">ข้อความขนาดเล็ก</span>
+          </div>
+
+          <div class="format-row">
+            <span class="label del-label">DEL:</span>
+            <span class="format-text del-text">ข้อความที่ถูกลบ</span>
+          </div>
+
+          <div class="format-row">
+            <span class="label sup-label">SUP:</span>
+            <span class="format-text">x<sup>2</sup></span>
+          </div>
+
+          <div class="format-row">
+            <span class="label sub-label">SUB:</span>
+            <span class="format-text">H<sub>2</sub>O</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 2-->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">💻</span> ตัวอย่างโค้ด HTML
+        </div>
+        <div class="card-body">
+          <div class="code-box">
+            <pre><code>
+&lt;b&gt;ข้อความตัวหนา&lt;/b&gt;
+&lt;strong&gt;ข้อความสำคัญ&lt;/strong&gt;
+&lt;i&gt;ข้อความตัวเอียง&lt;/i&gt;
+&lt;em&gt;ข้อความเน้นเสียง&lt;/em&gt;
+&lt;u&gt;ข้อความขีดเส้นใต้&lt;/u&gt;
+&lt;mark&gt;ข้อความที่ถูกเน้น&lt;/mark&gt;
+&lt;small&gt;ข้อความขนาดเล็ก&lt;/small&gt;
+&lt;del&gt;ข้อความที่ถูกลบ&lt;/del&gt;
+x&lt;sup&gt;2&lt;/sup&gt;
+H&lt;sub&gt;2&lt;/sub&gt;O</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: กิจกรรมฝึกปฏิบัติ -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">📌</span> กิจกรรมฝึกปฏิบัติ
+        </div>
+        <div class="card-body">
+          <ul class="activity-list">
+            <li>
+              <span class="check">✓</span>
+              <span>ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า</span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span>ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ</span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span>ทดลองเปรียบเทียบ <b>&lt;b&gt;</b> กับ <strong>&lt;strong&gt;</strong> และ <i>&lt;i&gt;</i> กับ <em>&lt;em&gt;</em></span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span>ปรับสี ขนาด และพื้นหลังของข้อความด้วย CSS</span>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <span>บันทึกไฟล์ชื่อ <code class="inline-code">formatting.html</code></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="tip-box">
+      <div class="tip-icon">💡</div>
+      <div class="tip-content">
+        <h2>เกร็ดความรู้</h2>
+        <p>
+          แท็กจัดรูปแบบข้อความช่วยให้เนื้อหาสื่อสารชัดเจนและมีความหมายมากขึ้น เช่น
+          <strong>&lt;strong&gt;</strong> ใช้สำหรับข้อความสำคัญ
+          <em>&lt;em&gt;</em> ใช้เน้นความสำคัญหรืออารมณ์ และ
+          <mark>&lt;mark&gt;</mark> ใช้เน้นข้อความที่ต้องการให้โดดเด่น
+          แท็กเหล่านี้ช่วยเพิ่มความหมายและช่วยจัดระเบียบเนื้อหาให้ผู้ใช้งานเข้าใจง่ายขึ้น
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

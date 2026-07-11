@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box; /* ขนาดของกล่องจะรวม padding และ border เข้าไปด้วย */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background-color: #eef4ff;
+  color: #1f2937;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+ /*อยากให้ทุกตัวเหมือนกันใช้ ,  */
+footer, 
+.hero,
+.card,
+.tip-box {
+    border : 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+    background: linear-gradient(to right, rgb(0, 0, 143), rgb(0, 202, 253));
+    padding: 20px;
+    color: aliceblue;
+
+    display: flex; 
+    justify-content: space-between; /*จัดให้แยกคนละฝั่งและจัดให้แนวนอน*/
+    align-items: center; /*จัดให้อยู่ตรงกลางแนวตั้ง*/
+
+    box-shadow: 0 4px 8px rgb(43, 137, 154); /* เงาของ header */
+
+}
+
+.brand {
+    display: flex; /*จัดให้เป็นแนวนอน*/
+    align-items: center; /*จัดให้อยู่ตรงกลางแนวตั้ง*/
+    gap: 10px; /*ระยะห่างระหว่างไอคอนกับข้อความ*/
+}
+
+.brand-icon { font-size: 50px; /*ขนาดของไอคอน*/
+  width: 50px; /*ขนาดของกล่องไอคอน*/
+  height: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;/*ทำให้กล่องไอคอนเป็นมุมโค้ง*/
+  display: flex; /*จัดให้ไอคอนอยู่ตรงกลาง*/
+  align-items: center; /*จัดให้อยู่ตรงกลางแนวตั้ง*/
+  justify-content: center; /*จัดให้อยู่ตรงกลางแนวนอน*/
+ } 
+
+ .brand h2 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+.brand-text p { 
+    font-size: 14px;/*ขนาดของข้อความ*/
+    opacity: 0.85;/*ความโปร่งแสงของข้อความ*/
+ } 
+
+ nav {
+  display: flex; 
+  gap: 26px; /*ระยะห่างระหว่างลิงก์*/
+}
+
+
+
+nav a {
+    color: aliceblue;
+    text-decoration: none; /*ลบเส้นใต้*/
+    margin-left: 20px; 
+
+}
+
+nav a:hover {
+    text-decoration: underline; /*เพิ่มเส้นใต้เมื่อ hover */
+    opacity: 1;/*ความโปร่งแสงของข้อความเมื่อ hover */
+   
+}
+
+.hero {
+  background: white;
+  padding: 45px 70px 30px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-icon {
+  width: 70px; 
+  height: 70px;
+  min-width: 70px;
+  background: #007bff;/*สีของกล่องไอคอน*/
+  color: white;
+  border-radius: 14px;/*ทำให้กล่องไอคอนเป็นมุมโค้ง*/
+  display: flex; /*จัดให้ไอคอนอยู่ตรงกลาง*/
+  align-items: center; 
+  justify-content: center; /*จัดให้อยู่ตรงกลางแนวนอน*/
+  font-size: 26px;
+  font-weight: bold; /*ความหนาของไอคอน*/
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  color: #003c9e;
+  margin-bottom: 6px;/*ระยะห่างระหว่างหัวข้อกับข้อความ*/
+}
+
+.hero-text p {
+  font-size: 17px;/*ขนาดของข้อความ*/
+  color: #4b5563;
+}
+
+
+.container {
+  max-width: 1200px;/*ความกว้างสูงสุดของcontainer*/
+  width: 90%;/*ความกว้างของcontainer*/
+  margin: 0 auto;/*จัดให้อยู่ตรงกลางของหน้าจอ*/
+  padding: 30px 0 60px;/*ระยะห่างด้านบนและด้านล่างของcontainer*/
+}
+
+.card-grid {
+     display: grid; /*มาช่วยจัดเรียงเป็นตาราง */
+    grid-template-columns: 1fr 1fr 1fr; /* กำหนดให้มี 3 คอลัมน์เท่ากัน */
+    gap: 25px;
+    align-items: start;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #dbeafe;/* เส้นขอบของ card */
+  box-shadow: 0 8px 22px rgba(15, 47, 117, 0.08);/* เงาของ card */
+  overflow: hidden;
+}
+
+.tip-box {
+    flex-direction: column;/*จัดให้เป็นแนวตั้ง*/
+  }

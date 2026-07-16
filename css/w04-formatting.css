@@ -1,150 +1,227 @@
 * {
-    box-sizing: border-box; /* ขนาดของกล่องจะรวม padding และ border เข้าไปด้วย */
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-  background-color: #eef4ff;
-  color: #1f2937;
+  font-family: Arial, sans-serif;
+  background-color: #ebf8ff;
+
   line-height: 1.6;
-  font-size: 18px;
 }
 
- /*อยากให้ทุกตัวเหมือนกันใช้ ,  */
-footer, 
-.hero,
-.card,
+footer,
+/* .hero, */
+/* .card, */
 .tip-box {
-    border : 1px solid rgb(255, 0, 0);
-    background-color: rgb(255, 255, 255);
-    margin: 20px;
-    padding: 20px;
+  border: 1px solid #ff0000;
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/* ================================
+              Header
+=================================== */
 header {
-    background: linear-gradient(to right, rgb(0, 0, 143), rgb(0, 202, 253));
-    padding: 20px;
-    color: aliceblue;
+  background: linear-gradient(to right, #0036aa, #325bfc);
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    display: flex; 
-    justify-content: space-between; /*จัดให้แยกคนละฝั่งและจัดให้แนวนอน*/
-    align-items: center; /*จัดให้อยู่ตรงกลางแนวตั้ง*/
-
-    box-shadow: 0 4px 8px rgb(43, 137, 154); /* เงาของ header */
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand {
-    display: flex; /*จัดให้เป็นแนวนอน*/
-    align-items: center; /*จัดให้อยู่ตรงกลางแนวตั้ง*/
-    gap: 10px; /*ระยะห่างระหว่างไอคอนกับข้อความ*/
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.brand-icon { font-size: 50px; /*ขนาดของไอคอน*/
-  width: 50px; /*ขนาดของกล่องไอคอน*/
-  height: 50px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 10px;/*ทำให้กล่องไอคอนเป็นมุมโค้ง*/
-  display: flex; /*จัดให้ไอคอนอยู่ตรงกลาง*/
-  align-items: center; /*จัดให้อยู่ตรงกลางแนวตั้ง*/
-  justify-content: center; /*จัดให้อยู่ตรงกลางแนวนอน*/
- } 
-
- .brand h2 {
-  font-size: 21px;
-  font-weight: 700;
+.brand-icon {
+  font-size: 50px;
+}
+.brand-text p {
+  font-size: 14px;
 }
 
-
-.brand-text p { 
-    font-size: 14px;/*ขนาดของข้อความ*/
-    opacity: 0.85;/*ความโปร่งแสงของข้อความ*/
- } 
-
- nav {
-  display: flex; 
-  gap: 26px; /*ระยะห่างระหว่างลิงก์*/
-}
-
-
-
+/* navigation */
 nav a {
-    color: aliceblue;
-    text-decoration: none; /*ลบเส้นใต้*/
-    margin-left: 20px; 
-
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
 nav a:hover {
-    text-decoration: underline; /*เพิ่มเส้นใต้เมื่อ hover */
-    opacity: 1;/*ความโปร่งแสงของข้อความเมื่อ hover */
-   
+  text-decoration: underline;
 }
 
+/* hero section */
 .hero {
-  background: white;
-  padding: 45px 70px 30px;
   display: flex;
-  align-items: center;
-  gap: 24px;
+  gap: 10px;
+
+  padding: 40px;
 }
 
 .hero-icon {
-  width: 70px; 
-  height: 70px;
-  min-width: 70px;
-  background: #007bff;/*สีของกล่องไอคอน*/
-  color: white;
-  border-radius: 14px;/*ทำให้กล่องไอคอนเป็นมุมโค้ง*/
-  display: flex; /*จัดให้ไอคอนอยู่ตรงกลาง*/
-  align-items: center; 
-  justify-content: center; /*จัดให้อยู่ตรงกลางแนวนอน*/
-  font-size: 26px;
-  font-weight: bold; /*ความหนาของไอคอน*/
+  background-color: #325bfc;
+  color: #fff;
+  border-radius: 15px;
+
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-text {
 }
 
 .hero-text h1 {
-  font-size: 32px;
-  color: #003c9e;
-  margin-bottom: 6px;/*ระยะห่างระหว่างหัวข้อกับข้อความ*/
+  font-size: 40px;
+  color: #1a2d78;
 }
 
 .hero-text p {
-  font-size: 17px;/*ขนาดของข้อความ*/
-  color: #4b5563;
+  font-size: 20px;
+  color: #474748;
 }
 
+/* Main content */
 
 .container {
-  max-width: 1200px;/*ความกว้างสูงสุดของcontainer*/
-  width: 90%;/*ความกว้างของcontainer*/
-  margin: 0 auto;/*จัดให้อยู่ตรงกลางของหน้าจอ*/
-  padding: 30px 0 60px;/*ระยะห่างด้านบนและด้านล่างของcontainer*/
+  /*max-width: 1200px;*/
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+
+  /*background-color: #b5fd76;*/
 }
 
 .card-grid {
-     display: grid; /*มาช่วยจัดเรียงเป็นตาราง */
-    grid-template-columns: 1fr 1fr 1fr; /* กำหนดให้มี 3 คอลัมน์เท่ากัน */
-    gap: 25px;
-    align-items: start;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  /* background-color: #fffb2c; */
 }
 
 .card {
-  background: white;
-  border-radius: 18px;
-  border: 1px solid #dbeafe;/* เส้นขอบของ card */
-  box-shadow: 0 8px 22px rgba(15, 47, 117, 0.08);/* เงาของ card */
+  background-color: #fff;
+
+  border-radius: 16px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+  border: 1px solid rgb(127, 134, 205);
+
   overflow: hidden;
 }
+.card-header {
+  background-color: #edf2f7;
 
-.tip-box {
-    flex-direction: column;/*จัดให้เป็นแนวตั้ง*/
-  }
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+
+  padding: 20px;
+  border-bottom: 1px solid rgb(127, 134, 205);
+}
+
+.card-header-icon {
+  background-color: #325bfc;
+  color: white;
+
+  /* padding: 10px; */
+
+  border-radius: 50%;
+
+  width: 38px;
+  height: 38px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  padding: 20px;  
+}
+
+.format-row{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+
+  gap: 20px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid  #6284ce;
+  padding: 6px 0
+}
+
+.label {
+  /*padding: 8px 50px;*/
+  
+  border-radius: 8px;
+
+  color: #ebf8ff;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+
+.B-label {background-color: #325bfc;}
+
+.STRONG-label {background-color: #03d826;}
+
+.I-label {background-color: #d8d403;}
+
+.EM-label {background-color: #d85803;}
+
+.U-label {background-color: #d80303;}
+
+.MARK-label {background-color: #03d8cd;}
+
+.SMALL-label {background-color: #9c03d8;}
+
+.DEL-label {background-color: #d8037f;}
+
+.SUP-label {background-color: #03d886;}
+
+.SUB-label {background-color: #d89f03;}
+
+
+
+/* card 2 */
+
+.pre-box {
+  background-color: #000000;
+  border-radius: 10px;
+  color: #ffffff;
+
+  padding: 20px;
+}
+
+.html-tag{
+    color: #ff0000;
+}
+
+.line-no{
+  color: #696464;
+  display: inline-block;
+  width: 20px;
+}
+
+
+
+
+
 

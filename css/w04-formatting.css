@@ -34,7 +34,7 @@ header {
   justify-content: space-between; /* จัดเรียงเนื้อหาให้อยู่ที่ขอบด้านซ้ายและขวา */
   align-items: center; /* จัดเรียงเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
 }
-/* .brand ตั้งชื่อ */
+/* .brand ตั้งชื่อ*/
 .brand  {
   display: flex;
   align-items: center; /* จัดเรียงเนื้อหาให้อยู่ตรงกลางแนวตั้ง */

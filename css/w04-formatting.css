@@ -25,7 +25,11 @@ footer,
               Header
 =================================== */
 header {
-  background: linear-gradient(to right, #0036aa, #325bfc); /* กำหนดพื้นหลังเป็นไลน์กราฟ */
+  background: linear-gradient(
+    to right,
+    #0036aa,
+    #325bfc
+  ); /* กำหนดพื้นหลังเป็นไลน์กราฟ */
   padding: 20px;
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* กำหนดเงาให้กับ header */
@@ -35,7 +39,7 @@ header {
   align-items: center; /* จัดเรียงเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
 }
 /* .brand ตั้งชื่อ*/
-.brand  {
+.brand {
   display: flex;
   align-items: center; /* จัดเรียงเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
   gap: 10px; /* กำหนดระยะห่างระหว่างไอคอนและข้อความ */
@@ -51,7 +55,7 @@ header {
 /* navigation */
 nav a {
   color: white;
-  text-decoration: none;  /* กำหนดให้ลิงก์ไม่มีเส้นใต้ */
+  text-decoration: none; /* กำหนดให้ลิงก์ไม่มีเส้นใต้ */
   margin-left: 20px; /* กำหนดระยะห่างด้านซ้ายของลิงก์ */
 }
 
@@ -110,7 +114,10 @@ nav a:hover {
 .card-grid {
   display: grid; /* ใช้ Grid Layout เพื่อจัดเรียง card */
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-columns: repeat(3, 1fr); /* กำหนดให้มี 3 คอลัมน์ที่มีความกว้างเท่ากัน */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* กำหนดให้มี 3 คอลัมน์ที่มีความกว้างเท่ากัน */
   gap: 20px;
 
   /* background-color: #fffb2c; */
@@ -148,27 +155,27 @@ nav a:hover {
   height: 38px;
 
   display: inline-flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center; /* จัดเรียงเนื้อหาให้อยู่ตรงกลางแนวนอนและแนวตั้ง */
 }
 
 .card-body {
-  padding: 20px;  /* กำหนดระยะห่างภายในของ card-body */
+  padding: 20px; /* กำหนดระยะห่างภายในของ card-body */
 }
 
-.format-row{
+.format-row {
   display: grid;
   grid-template-columns: 100px 1fr; /* กำหนดให้มี 2 คอลัมน์ โดยคอลัมน์แรกมีความกว้าง 100px และคอลัมน์ที่สองมีความกว้างอัตโนมัติ */
 
   gap: 20px;
   margin-bottom: 8px;
-  border-bottom: 1px solid  #6284ce;
-  padding: 6px 0
+  border-bottom: 1px solid #6284ce;
+  padding: 6px 0;
 }
 
 .label {
   /*padding: 8px 50px;*/
-  
+
   border-radius: 8px; /* กำหนดมุมโค้งของ label */
 
   color: #ebf8ff;
@@ -177,63 +184,80 @@ nav a:hover {
   text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
 }
 
+.B-label {
+  background-color: #325bfc;
+} /* กำหนดสีพื้นหลังของ label B เป็นสีน้ำเงิน */
 
-.B-label {background-color: #325bfc;} /* กำหนดสีพื้นหลังของ label B เป็นสีน้ำเงิน */
+.STRONG-label {
+  background-color: #03d826;
+}
 
-.STRONG-label {background-color: #03d826;}
+.I-label {
+  background-color: #d8d403;
+}
 
-.I-label {background-color: #d8d403;}
+.EM-label {
+  background-color: #d85803;
+}
 
-.EM-label {background-color: #d85803;}
+.U-label {
+  background-color: #d80303;
+}
 
-.U-label {background-color: #d80303;}
+.MARK-label {
+  background-color: #03d8cd;
+}
 
-.MARK-label {background-color: #03d8cd;}
+.SMALL-label {
+  background-color: #9c03d8;
+}
 
-.SMALL-label {background-color: #9c03d8;}
+.DEL-label {
+  background-color: #d8037f;
+}
 
-.DEL-label {background-color: #d8037f;}
+.SUP-label {
+  background-color: #03d886;
+}
 
-.SUP-label {background-color: #03d886;}
-
-.SUB-label {background-color: #d89f03;}
-
-
+.SUB-label {
+  background-color: #d89f03;
+}
 
 /* card 2 */
 
 .pre-box {
-  background-color: #000000; 
+  background-color: #000000;
   border-radius: 10px;
   color: #ffffff;
 
   padding: 20px;
 }
 
-.html-tag{
-    color: #ff0000;
+.html-tag {
+  color: #ff0000;
 }
 
-.line-no{
+.line-no {
   color: #696464;
   display: inline-block; /* ทำให้ line-no เป็น inline-block เพื่อให้สามารถกำหนดความกว้างได้ */
   width: 20px;
 }
 
 /* Crad 3 */
-.activity-list{
+.activity-list {
   list-style: none; /* ลบสัญลักษณ์ bullet ของรายการ */
 }
-.activity-list li{
+.activity-list li {
   margin-bottom: 20px; /* กำหนดระยะห่างด้านล่างของรายการ */
 }
 
-.check{
+.check {
   /*background-color: rgb(201, 64, 48);*/
   color: white;
   font-weight: bold;
   font-size: 24px;
-  
+
   /*padding: 10px;*/
   border-radius: 50%; /* กำหนดให้ check เป็นวงกลม */
 
@@ -245,14 +269,24 @@ nav a:hover {
   align-items: center;
 }
 
-.check-blue{background-color: blue;}
-.check-red{background-color: red;}
-.check-green{background-color: green;}
-.check-orenge{background-color: darkorange;}
-.check-darkmagenta{background-color: darkmagenta;}
+.check-blue {
+  background-color: blue;
+}
+.check-red {
+  background-color: red;
+}
+.check-green {
+  background-color: green;
+}
+.check-orenge {
+  background-color: darkorange;
+}
+.check-darkmagenta {
+  background-color: darkmagenta;
+}
 
-.flie{
-  background-color: rgb(155, 215, 255); 
+.flie {
+  background-color: rgb(155, 215, 255);
   color: darkblue;
 
   border-radius: 10px;
@@ -260,18 +294,18 @@ nav a:hover {
 }
 
 /* Tip-box */
-.tip-box{
+.tip-box {
   background-color: rgb(243, 224, 188);
   border: 1px solid rgb(179, 116, 0);
   border-radius: 20px; /* กำหนดมุมโค้งของ tip-box */
-  
+
   padding: 20px;
   margin: 20px;
 }
-.tip-box-header{
+.tip-box-header {
   display: inline-flex;
 }
-.tip-box-icon{
+.tip-box-icon {
   background-color: rgb(255, 168, 39);
   border-radius: 50%;
   font-size: 20px;
@@ -283,17 +317,13 @@ nav a:hover {
   justify-content: center; /* จัดเรียงเนื้อหาให้อยู่ตรงกลางแนวนอน */
   align-items: center;
 }
-.tip-box h2{
+.tip-box h2 {
   margin-left: 15px;
 }
-.tip-box p{
+.tip-box p {
   padding-left: 60px;
 }
-.tip-box-text{
+.tip-box-text {
   color: blue;
   font-weight: bold; /* กำหนดความหนาของตัวอักษร */
 }
-
-
-
-

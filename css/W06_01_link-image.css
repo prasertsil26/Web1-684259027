@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 255, 255, 0.438);
+
+  color: black;
+  line-height: 1.6;
+}
+
+
+.container {
+  /* border: 1px solid rgb(0, 17, 255);
+  padding: 15px;
+  margin: 15px; */
+}
+
+/*===========================
+       Header Section
+=============================*/
+.site-header {
+  /* border: 1px solid red;
+  padding: 15px;
+  margin: 15px; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(110deg,rgb(34, 67, 212),rgb(0, 225, 255));
+
+
+  padding: 8px 20px;
+}
+
+.brand {  
+   /* border: 1px solid rgb(255, 0, 0); 
+  padding: 15px;
+  margin: 15px; */
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  color: aliceblue;
+}
+
+.brand-logo {
+
+  background-color: rgb(37, 47, 187);
+
+  border-radius: 50%;
+
+  font-size: 30px;
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-text h2 {
+ 
+  font-size: 24px;
+  
+}
+
+.brand-text p {
+
+  font-size: 14px;
+  opacity: 0.5px; /*โป่งใส*/
+}
+
+
+/* navbar */
+.main-nav {
+  /* border: 1px solid rgb(255, 0, 0);
+  padding: 15px;
+  margin: 15px; */
+
+
+}
+.nav-list {
+
+  list-style-type: none; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list a {
+
+  color: aliceblue;
+  text-decoration: none;
+
+  padding: 8px 15px;
+  border-radius: 8PX;
+
+  transition: 0.8s; 
+  
+}
+.nav-list a:hover {
+
+  background-color: rgba(240, 248, 255, 0.342);
+
+
+}
+
+
+/*===========================
+       Main Section
+=============================*/
+.main-layout {
+  /* border: 1px solid red;
+  padding: 15px;
+  margin: 15px; */
+
+  display: grid;
+  grid-template-columns: 1fr 390px;
+    /* grid-template-columns: 80% 20%; */
+
+    padding: 20px 22px;
+    
+}
+
+/* left content */
+
+.left-content {
+  /* border: 1px solid rgb(0, 59, 8);
+  padding: 15px;
+  margin: 15px; */
+}
+
+/* Hero */
+
+.hero {
+  /* border: 1px solid rgb(0, 59, 8);
+  padding: 15px;
+  margin: 15px; */
+
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+
+  padding: 26px 36px;
+  background: linear-gradient(90deg,rgb(248, 248, 248),rgb(0, 140, 255));
+
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(56, 56, 56);
+
+ 
+  align-items: center;
+
+  
+}
+
+.hero-text h1{
+  font-size: 36px;
+  color: rgb(0, 75, 75);
+  line-height: 1.8;
+  
+}
+.hero-text div{
+  font-size: 21px;
+  color: rgba(0, 75, 75, 0.527);
+  font-weight: 600;
+  
+}
+
+.hero-photo img {
+  width: 400px;
+  height: 200px;
+  border: 3px solid rgb(1, 3, 126);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(56, 56, 56);
+
+
+  object-fit: cover;
+
+  
+    /*
+    object-fit: contain ➡️เห็นภาพครบ รักษาสัดส่วน (อาจมีขอบว่าง)
+    object-fit: fill ➡️ยืดภาพให้เต็มกล่อง ภาพอาจบิด (สัดส่วนเพี้ยน)
+    object-fit: cover ➡️ครอปภาพให้เต็มกล่อง รักษาสัดส่วน บางส่วนของภาพจะถูกตัดออก
+    */
+}
+
+
+
+.card {
+  border: 1px solid rgb(0, 49, 7);
+  padding: 15px;
+  margin: 15px;
+}
+
+/* right sidbar */
+
+.right-sidbar {
+  border: 1px solid rgb(255, 141, 11);
+  padding: 15px;
+  margin: 15px;
+}
+
+.side-card {}
+
+.submit-card {}
+
+/*===========================
+       Footer Section
+=============================*/
+.tip-box {
+  border: 1px solid red;
+  padding: 15px;
+  margin: 15px;
+}

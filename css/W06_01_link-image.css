@@ -5,13 +5,12 @@
 }
 
 body {
-  font-family: 'Kanit', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Kanit", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(0, 255, 255, 0.438);
 
   color: black;
   line-height: 1.6;
 }
-
 
 .container {
   /* border: 1px solid rgb(0, 17, 255);
@@ -31,14 +30,13 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  background: linear-gradient(110deg,rgb(34, 67, 212),rgb(0, 225, 255));
-
+  background: linear-gradient(110deg, rgb(34, 67, 212), rgb(0, 225, 255));
 
   padding: 8px 20px;
 }
 
-.brand {  
-   /* border: 1px solid rgb(255, 0, 0); 
+.brand {
+  /* border: 1px solid rgb(255, 0, 0); 
   padding: 15px;
   margin: 15px; */
 
@@ -50,7 +48,6 @@ body {
 }
 
 .brand-logo {
-
   background-color: rgb(37, 47, 187);
 
   border-radius: 50%;
@@ -66,29 +63,22 @@ body {
 }
 
 .brand-text h2 {
- 
   font-size: 24px;
-  
 }
 
 .brand-text p {
-
   font-size: 14px;
   opacity: 0.5px; /*โป่งใส*/
 }
-
 
 /* navbar */
 .main-nav {
   /* border: 1px solid rgb(255, 0, 0);
   padding: 15px;
   margin: 15px; */
-
-
 }
 .nav-list {
-
-  list-style-type: none; 
+  list-style-type: none;
 
   display: flex;
   justify-content: center;
@@ -97,23 +87,17 @@ body {
 }
 
 .nav-list a {
-
   color: aliceblue;
   text-decoration: none;
 
   padding: 8px 15px;
-  border-radius: 8PX;
+  border-radius: 8px;
 
-  transition: 0.8s; 
-  
+  transition: 0.8s;
 }
 .nav-list a:hover {
-
   background-color: rgba(240, 248, 255, 0.342);
-
-
 }
-
 
 /*===========================
        Main Section
@@ -125,10 +109,9 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 390px;
-    /* grid-template-columns: 80% 20%; */
+  /* grid-template-columns: 80% 20%; */
 
-    padding: 20px 22px;
-    
+  padding: 20px 22px;
 }
 
 /* left content */
@@ -149,68 +132,198 @@ body {
   display: grid;
   grid-template-columns: 1.5fr 0.8fr;
 
-  padding: 26px 36px;
-  background: linear-gradient(90deg,rgb(248, 248, 248),rgb(0, 140, 255));
+  background: linear-gradient(90deg, rgb(248, 248, 248), rgb(0, 140, 255));
 
+  padding: 26px 36px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgb(56, 56, 56);
 
- 
   align-items: center;
-
-  
 }
 
-.hero-text h1{
+.hero-text h1 {
   font-size: 36px;
   color: rgb(0, 75, 75);
   line-height: 1.8;
-  
 }
-.hero-text div{
+.hero-text div {
   font-size: 21px;
   color: rgba(0, 75, 75, 0.527);
   font-weight: 600;
-  
 }
 
 .hero-photo img {
   width: 400px;
   height: 200px;
-  border: 3px solid rgb(1, 3, 126);
+  border: 3px solid rgba(1, 3, 126, 0.589);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgb(56, 56, 56);
 
-
   object-fit: cover;
 
-  
-    /*
+  /*
     object-fit: contain ➡️เห็นภาพครบ รักษาสัดส่วน (อาจมีขอบว่าง)
     object-fit: fill ➡️ยืดภาพให้เต็มกล่อง ภาพอาจบิด (สัดส่วนเพี้ยน)
     object-fit: cover ➡️ครอปภาพให้เต็มกล่อง รักษาสัดส่วน บางส่วนของภาพจะถูกตัดออก
     */
 }
 
+/*=============Link Example==============*/
 
 
 .card {
-  border: 1px solid rgb(0, 49, 7);
-  padding: 15px;
-  margin: 15px;
+  border: 1px solid rgb(166, 221, 218);
+  background-color:white;
+  border-radius: 15px;
+
+  padding: 26px 36px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(56, 56, 56);
+
+  margin-top: 20px;
+
 }
 
+.card-header-title {
+  
+}
+
+.card-header-title h2 {
+   color: rgb(0, 75, 75);
+}
+.card-body-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 20px; 
+}
+
+/* กล่องลิ้งค์ด้านซ้าย */
+
+.result-panel , .code-panel {
+  border: 1px solid rgba(146, 192, 245, 0.5);
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  
+}
+
+.result-panel-header , .code-panel-header {
+  background-color: rgb(221, 235, 250);
+   color: rgb(0, 75, 75);
+   font-weight: bold ;
+
+   padding: 0px 20px;
+
+}
+.result-panel-body {
+ 
+  line-height: 2;
+  padding: 5px 20px 10px 20px;
+}
+.result-panel-body a {
+
+  display: block;
+
+  color: rgb(21, 21, 189);
+}
+
+.result-panel-body a:hover {
+
+  color: rgb(189, 21, 21);
+}
+
+
+.email-box {
+
+  background-color: blue;
+  border-radius: 5px;
+
+  margin-right: 10px;
+}
+
+.dack-btn {
+  border: 2px solid rgb(21, 21, 189);
+  border-radius: 10px;
+
+  display: inline-block !important;
+
+  padding: 0 20px;
+
+  text-decoration: none;
+}
+
+
+/* กล่องลิ้งค์ด้านขวา */
+
+
+.code-panel {
+
+  background-color: black;
+}
+
+
+.code-panel-body {
+
+  color: aliceblue;
+}
+
+.code-list {
+  color: aliceblue;
+  padding: 16px 20px;
+
+}
+
+.code-list li {
+  padding: 0px 20px;
+
+}
+
+.tag {
+  color: brown;
+}
+
+.attr {
+  color: rgb(146, 172, 0);
+}
+
+.value {
+  color: rgb(0, 177, 15);
+}
+
+
+/* Image Example */
+
+.result-panel-body-3g {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  align-items: baseline;
+  text-align: center;
+  font-size: 14px;
+
+  padding: 14px 14px;
+}
+
+
 /* right sidbar */
+
 
 .right-sidbar {
   border: 1px solid rgb(255, 141, 11);
   padding: 15px;
   margin: 15px;
+
+
 }
 
-.side-card {}
+.side-card {
+}
 
-.submit-card {}
+.submit-card {
+}
 
 /*===========================
        Footer Section

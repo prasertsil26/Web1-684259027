@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link and Image</title>
 
-<!-- External Style Sheet -->
+    <!-- External Style Sheet -->
     <link rel="stylesheet" href="css/W06_01_link-image.css">
 
 
-<!-- Google Font -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 </head>
+
 <body>
-        <div class="container">
-<!-- Header Sextion -->
-            <header class="site-header">
-                <div class="brand">
+    <div class="container">
+        <!-- Header Sextion -->
+        <header class="site-header">
+            <div class="brand">
 
-                    <!-- logo -->
-                    <div class="brand-logo">🎓</div>
-                    <div class="brand-text">
-                        <h2>เรียนรู้เว็บเบื้องต้น</h2>
-                        <p>Web Development Basics</p>
-                    </div>
+                <!-- logo -->
+                <div class="brand-logo">🎓</div>
+                <div class="brand-text">
+                    <h2>เรียนรู้เว็บเบื้องต้น</h2>
+                    <p>Web Development Basics</p>
                 </div>
+            </div>
 
-<!--navbar  -->
-                <div class="main-nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html">🏠 Home</a></li>
-                        <li><a href="w03-01heading.html">📍 Heading</a></li>
-                        <li><a href="W04-01-formating.html"> 📝Formating</a></li>
-                        <li><a href="#">🔗Line & image</a></li>
-                        <li><a href="#">📌Practice</a></li>
-                    </ul>
-                </div>
-            </header>
+            <!--navbar  -->
+            <div class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="w03-01heading.html">📍 Heading</a></li>
+                    <li><a href="W04-01-formating.html"> 📝Formating</a></li>
+                    <li><a href="#">🔗Line & image</a></li>
+                    <li><a href="#">📌Practice</a></li>
+                </ul>
+            </div>
+        </header>
 
-<!-- Main Section -->
+        <!-- Main Section -->
 
-            <main class="main-layout">
+        <main class="main-layout">
 
-<!-- left content -->
+            <!-- left content -->
 
             <section class="left-content">
 
 
-            <!-- Hero -->
+                <!-- Hero -->
 
                 <section class="hero">
                     <div class="hero-text">
@@ -64,37 +66,186 @@
                     </div>
 
                     <div class="hero-photo">
-                        <img src="images/mountain.jpg" alt="ภูเขา" > รูป
-                    </div>  
-                    
+                        <img src="images/mountain.jpg" alt="ภูเขา">
+                    </div>
+
                 </section>
 
-            <!-- Link Example -->
+                <!-- Link Example -->
 
-                <article class="card">Link Example</article>
+                <article class="card">
 
-            <!-- Image Example -->
+                    <div class="card-header-title">
+                        <h2> 🔗 ตัวอย่างลิงค์ (Link Example)</h2>
+                    </div>
 
-                <article class="card">Image Example</article>
+                    <div class="card-body-grid">
+
+                        <!-- กล่องลิ้งค์ด้านซ้าย -->
+
+                        <div class="result-panel">
+                            <div class="result-panel-header">ผลลัพธ์</div>
+                            <div class="result-panel-body">
+                                <a href="https://www.npru.ac.th">ไปยังเว็บเซต์มหาวิทยาลัย</a>
+                                <a href="https://www.google.com" target="_blank"">เปิด google ในแทบใหม๋</a>
+                                <a href=" mailto:teacher@example.com"><span
+                                        class="email-box">💌</span>ส่งอีเมลถึงผู้สอน</a>
+                                <a href="index.html" class="dack-btn"> ← กลับไปยังหน้าแรก</a>
+                            </div>
+                        </div>
+
+                        <!-- กล่องลิ้งค์ด้านขวา -->
+
+                        <div class="code-panel">
+                            <div class="code-panel-header">โค้ด HTML</div>
+                            <div class="code-panel-body">
+                                <ol class="code-list">
+                                    <li>
+                                        <span class="tag">&lt;a</span>
+                                        <span class="attr">href</span>
+                                        =
+                                        <span class="value">"https://www.npru.ac.th"</span>
+                                        <span class="tag">&gt;</span>
+                                        เว็บไซต์มหาวิทยาลัย
+                                        <span class="tag">&lt;/a&gt;</span>
+                                    </li>
+                                    <li>
+                                        <span class="tag">&lt;a</span>
+                                        <span class="attr">href</span>
+                                        =
+                                        <span class="value">"https://www.google.com"</span>
+                                        <span class="attr">target</span>
+                                        =
+                                        <span class="value">"_blank"</span>
+                                        <span class="tag">&gt;</span>
+                                        เปิด Google ในแท็บใหม่
+                                        <span class="tag">&lt;/a&gt;</span>
+                                    </li>
+                                    <li>
+                                        <span class="tag">&lt;a</span> <span class="attr">href</span>=<span
+                                            class="value">"mailto:teacher@example.com"</span><span
+                                            class="tag">&gt;</span>ส่งอีเมล<span class="tag">&lt;/a&gt;</span>
+                                    </li>
+                                    <li>
+                                        <span class="tag">&lt;a</span> <span class="attr">href</span>=<span
+                                            class="value">"index.html"</span><span
+                                            class="tag">&gt;</span>กลับหน้าแรก<span class="tag">&lt;/a&gt;</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Image Example -->
+
+                <article class="card">
 
 
-    
+                    <div class="card-header-title">
+                        <h2> 🖼️ ตัวอย่างรูปภาพ (Image Example)</h2>
+                    </div>
+
+                    <div class="card-body-grid">
+
+                        <!-- กล่องลิ้งค์ด้านซ้าย -->
+
+                        <div class="result-panel">
+
+                            <div class="result-panel-header">ผลลัพธ์</div>
+                           
+
+                            <div class="result-panel-body-3g">
+                                <figure>
+                                    <img src="https://npru.ac.th/assets/img/banner_news.jpg" alt="โลโก้มหาวิทยาลัย" width="150px">
+                                    <figcaption>โลโก้มหาวิทยาลัย</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="https://pws.npru.ac.th/suphitcha/data/images/se%281%29.png"
+                                        alt="โลโก้สาขา SE" width="150px">
+                                    <figcaption>โลโก้สาขา SE</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/747799415_1637087561750505_6830548376605110438_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1108x1477&ctp=s1108x1477&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NiThN-aMYjYQ7kNvwENQffk&_nc_oc=Adr92IAoI78eHBA5AkHDgD9wjLiAUA-PIcqzKX9HsRUw65wG3w3_7-YURM8lNaFAq_Y&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=IaGojFszuHsiJFi7zMfaoA&_nc_ss=7a289&oh=00_AQGOr45g1UaZ8fqu3YRyTUrMCySKocE8c7sB2zpxOXhm2A&oe=6A8C5AD9"
+                                        alt="ภาพนักศึกษา SE" width="120px">
+                                    <figcaption>ภาพนักศึกษา SE</figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- กล่องลิ้งค์ด้านขวา -->
+
+                        <div class="code-panel">
+                            <div class="code-panel-header">โค้ด HTML</div>
+                            <div class="code-panel-body">
+                                <ol class="code-list">
+                                    <li>
+                                        <span class="tag">&lt;img</span>
+                                        <span class="attr">src</span>
+                                        =
+                                        <span class="value">"images/campus.jpg"</span>
+                                        <span class="attr">alt</span>
+                                        =
+                                        <span class="value">"ภาพมหาวิทยาลัย"</span>
+                                        <span class="attr">width</span>
+                                        =
+                                        <span class="value">"220"</span>
+                                        <span class="tag">&gt;</span>
+                                    </li>
+                                    <li>
+                                        <span class="tag">&lt;img</span>
+                                        <span class="attr">src</span>
+                                        =
+                                        <span class="value">"images/student.jpg"</span>
+                                        <span class="attr">alt</span>
+                                        =
+                                        <span class="value">"นักศึกษากำลังเรียน"</span>
+                                        <span class="attr">width</span>
+                                        =
+                                        <span class="value">"180"</span>
+                                        <span class="tag">&gt;</span>
+                                    </li>
+                                    <li>
+                                        <span class="tag">&lt;img</span>
+                                        <span class="attr">src</span>
+                                        =
+                                        <span class="value">"images/logo.png"</span>
+                                        <span class="attr">alt</span>
+                                        =
+                                        <span class="value">"โลโก้วิชา"</span>
+                                        <span class="attr">height</span>
+                                        =
+                                        <span class="value">"80"</span>
+                                        <span class="tag">&gt;</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+
+
             </section>
 
-        <!-- Right Sidbar -->
+            <!-- Right Sidbar -->
 
-<section class="right-sidbar">Right Sidbar</section>
-
-
-
-
-            </main>
+            <section class="right-sidbar">Right Sidbar</section>
 
 
 
-<!--  Footer Section -->
-            <footer class="tip-box"></footer>
-        </div>
+
+        </main>
+
+
+
+        <!--  Footer Section -->
+        <footer class="tip-box">tip-box</footer>
+    </div>
 </body>
-</html>
 
+</html>

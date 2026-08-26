@@ -307,22 +307,105 @@ body {
   padding: 14px 14px;
 }
 
+/*============= right sidbar ==============*/
 
-/* right sidbar */
-
-
-.right-sidbar {
-  border: 1px solid rgb(255, 141, 11);
-  padding: 15px;
-  margin: 15px;
-
-
+.right-sidebar {
+ 
+  padding: 0 15px 15px 15px; 
+  margin: -20px 15px 15px 15px;
+  box-sizing: border-box;
 }
-
 .side-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e8;
+  border-radius: 15px;
+
+  padding: 10px 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.submit-card {
+.sidecard-header {
+  color: #2b2b2b;
+}
+.sidecard-body {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 10px;
+
+  font-size: 16px;
+  align-items: center;
+  padding: 6px;
+}
+.sidecard-body pink-btn {
+  font-size: 22px;
+}
+.pink-btn {
+  background-color: #4c43b0;
+  border-radius: 50%;
+  color: white;
+
+  align-items: center;
+  text-align: center;
+
+  width: 28px;
+  height: 28px;
+}
+.btn {
+  border-radius: 50%;
+  color: white;
+
+  align-items: center;
+  text-align: center;
+
+  width: 28px;
+  height: 28px;
+}
+
+.sidebody-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  align-items: center;
+  text-align: center;
+}
+.body-box {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #f8f7f7;
+}
+.a-box {
+  background-color: #6f6cc95d;
+  color: #080035;
+}
+.href-box {
+  background-color: #91f6ed;
+  color: #0b5a93;
+}
+.target-box {
+  background-color: #49f47a;
+  color: #024d18;
+}
+.img-box {
+  background-color: #ebc396;
+  color: #ff7700;
+}
+.src-box {
+  background-color: #dfbbf7;
+  color: #260038;
+}
+.alt-box {
+  background-color: #fea5a5;
+  color: #710000;
+}
+.width-box {
+  background-color: #a4f6d5;
+  color: #005938;
+}
+.height-box {
+  background-color: #f5e999;
+  color: #aa9310;
 }
 
 /*===========================

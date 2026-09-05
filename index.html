@@ -10,84 +10,292 @@
         html {
             scroll-behavior: smooth; /* เลื่อนหน้าจอแบบนุ่มนวล */
         }
-        
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(245, 211, 100);
-            margin: 50px 50px 50px 50px;
-            scroll-behavior: smooth;
-
-            line-height: 1.5;  /* ระยะห่างระหว่างบรรทัด */
+            font-family: "Segoe UI", Tahoma, Arial, Helvetica, sans-serif;
+            background-color: #eaf3fc;
+            color: #2c3e50;
+            margin: 0;
+            line-height: 1.6;
         }
 
-        
-
-        h1 { color: rgb(255, 0, 128);
-        text-align: center;
+        /* ---------- Top header bar ---------- */
+        .site-header{
+            background: linear-gradient(120deg, #3b6fed, #1d4fd6);
+            color: #ffffff;
+            padding: 22px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        h2 { color: rgb(255, 0, 128);
+        .site-header .logo-box{
+            display: flex;
+            align-items: center;
+            gap: 14px;
         }
 
-        h3 { color: rgb(0, 125, 241);
+        .site-header .logo-icon{
+            width: 46px;
+            height: 46px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .site-header .titles h1{
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .site-header .titles p{
+            margin: 2px 0 0;
+            font-size: 0.85rem;
+            color: #dbe7ff;
+        }
+
+        .site-header .student-id{
+            font-size: 0.85rem;
+            color: #dbe7ff;
+        }
+
+        /* ---------- Hero ---------- */
+        .hero{
+            padding: 46px 50px 30px;
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero-icon{
+            flex-shrink: 0;
+            width: 78px;
+            height: 78px;
+            background: #2f6fed;
+            border-radius: 18px;
+            color: #ffffff;
+            font-size: 1.7rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 18px rgba(47,111,237,0.35);
+        }
+
+        h1 {
+            color: #1b2a4b;
+            font-size: 2rem;
+            margin: 0 0 8px;
+        }
+
+        .hero p{
+            color: #5b6b83;
+            margin: 0;
+        }
+
+        /* ---------- Topic quick-jump grid (upgraded from small pills to boxed tiles) ---------- */
+        .topic-grid{
+            max-width: 1000px;
+            margin: 0 auto 30px;
+            padding: 0 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 12px;
+        }
+
+        .topic-grid a{
+            display: block;
+            background: #ffffff;
+            border: 1px solid #c9dcfa;
+            border-radius: 10px;
+            padding: 14px 16px;
+            color: #1b2a4b;
+            font-weight: bold;
+            font-size: 0.95rem;
+            box-shadow: 0 3px 8px rgba(47,111,237,0.06);
+        }
+
+        .topic-grid a:hover{
+            background: #2f6fed;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* ---------- Content ---------- */
+        main{
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 50px 60px;
+        }
+
+        .card{
+            background: #ffffff;
+            border: 1px solid #dbe6f5;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(47,111,237,0.08);
+            padding: 26px 30px;
+            margin-bottom: 24px;
+        }
+
+        .card-head{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .icon-circle{
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.05rem;
+            color: #ffffff;
+            flex-shrink: 0;
+        }
+
+        /* สีของแต่ละไอคอน แยกเป็นคลาสของตัวเอง */
+        .icon-intro     { background-color: rgb(47, 111, 237); }
+        .icon-structure { background-color: rgb(99, 102, 241); }
+        .icon-heading   { background-color: rgb(22, 163, 74); }
+        .icon-paragraph { background-color: rgb(245, 158, 11); }
+        .icon-format    { background-color: rgb(147, 51, 234); }
+        .icon-links     { background-color: rgb(14, 165, 233); }
+        .icon-lists     { background-color: rgb(20, 184, 166); }
+        .icon-images    { background-color: rgb(219, 39, 119); }
+        .icon-tables    { background-color: rgb(234, 88, 12); }
+        .icon-forms     { background-color: rgb(124, 58, 237); }
+        .icon-media     { background-color: rgb(8, 145, 178); }
+        .icon-semantic  { background-color: rgb(101, 163, 13); }
+        .icon-workshop  { background-color: rgb(225, 29, 72); }
+
+        h2 {
+            color: #1b2a4b;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        h3 {
+            color: #2f6fed;
             font-size: 14px;
+            margin: 0 0 12px;
         }
 
         pre {
-            background-color: rgb(255, 145, 0);
-            padding: 10px;
-            border-left: 4px solid rgb(230, 34, 8);
-
+            background-color: #f3f6fb;
+            color: #33415c;
+            padding: 14px 16px;
+            border-left: 4px solid #2f6fed;
+            border-radius: 8px;
             white-space: pre-wrap;
-            font-size: 16px ;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 14px;
         }
-
 
         a {
-            text-decoration: none;     /* จะให้มีขีดเส้นใต้หรือไม่ underlineมี */
+            color: #2f6fed;
+            text-decoration: none;
         }
-        a:hover{        /* ถ้าจะให้มีสีตอนจะเลือก */
-            color: red;
+        a:hover{
+            color: #f59e0b;
             text-decoration: underline;
         }
 
-        .text-center{     /* . คือการสร้างตัวแปร */
+        .text-center{
             text-align: center;
         }
 
+        .back-top{
+            display: block;
+            text-align: right;
+            margin-top: 14px;
+            font-size: 0.85rem;
+        }
 
+        .workshop-badges{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        .workshop-badges span, .workshop-badges a{
+            font-size: 0.8rem;
+            padding: 5px 14px;
+            border-radius: 999px;
+            background: #eaf1fe;
+            color: #2f6fed;
+            border: 1px solid #c9dcfa;
+        }
+
+        .workshop-badges a:hover{ background: #2f6fed; color: #fff; text-decoration: none; }
+
+        ul, ol{ padding-left: 22px; }
+
+        hr{ border: none; border-top: 1px solid #dbe6f5; margin: 30px 0; }
+
+        footer{
+            color: #5b6b83;
+            font-size: 0.9rem;
+        }
     </style>
 
 </head>
 <body>
-    <h1 id="top">HTML Tutorial</h1>
-    <hr>
-    <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
 
-    <!-- Topics -->
-    <h2>Topics</h2>
-    <ul>
-        <li><a href="#Introduction">Introduction to HTML</a></li>
-        <li><a href="#Structure">HTML Document Structure</a></li>
-        <li><a href="#Heading">Heading</a></li>
-        <li><a href="#Paragraph">Paragraph</a></li>
-        <li><a href="#TextFormatting">Text Formatting</a></li>
-        <li><a href="#Creating Links">Creating Links</a></li>
-        <li><a href="#Lists">Lists (Ordered and Unordered)</a></li>
-        <li><a href="#Adding Images">Adding Images</a></li>
-        <li><a href="#Creating Tables">Creating Tables</a></li>
-        <li><a href="#HTML Forms">HTML Forms</a></li>
-        <li><a href="#Embedding Multimedia">Embedding Multimedia (Audio & Video)</a></li>
-        <li><a href="#Semantic HTML">Semantic HTML</a></li>
-        <li><a href="#My Workshop">My Workshop</a></li>
-    </ul>
-    <hr>
-    
-    
-    <!-- Content Introduction -->
-    
-    <h2 id="Introduction">Introduction to HTML</h2>
-    <Pre>
+    <header class="site-header">
+        <div class="logo-box">
+            <div class="logo-icon">&lt;/&gt;</div>
+            <div class="titles">
+                <h1>HTML Tutorial</h1>
+                <p>Basic Web Development</p>
+            </div>
+        </div>
+        <div class="student-id">684259027</div>
+    </header>
+
+    <div class="hero" id="top">
+        <div class="hero-icon">&lt;/&gt;</div>
+        <div>
+            <h1>HTML Tutorial</h1>
+            <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
+        </div>
+    </div>
+
+    <div class="topic-grid">
+        <a href="#Introduction">Introduction to HTML</a>
+        <a href="#Structure">HTML Document Structure</a>
+        <a href="#Heading">Heading</a>
+        <a href="#Paragraph">Paragraph</a>
+        <a href="#TextFormatting">Text Formatting</a>
+        <a href="#Creating Links">Creating Links</a>
+        <a href="#Lists">Lists</a>
+        <a href="#Adding Images">Adding Images</a>
+        <a href="#Creating Tables">Creating Tables</a>
+        <a href="#HTML Forms">HTML Forms</a>
+        <a href="#Embedding Multimedia">Embedding Multimedia</a>
+        <a href="#Semantic HTML">Semantic HTML</a>
+        <a href="#My Workshop">My Workshop</a>
+    </div>
+
+    <main>
+
+        <!-- Content Introduction -->
+        <div class="card" id="Introduction">
+            <div class="card-head">
+                <div class="icon-circle icon-intro">📘</div>
+                <h2>Introduction to HTML</h2>
+            </div>
+            <pre>
 - HTML stands for Hyper Text Markup Language
 - HTML is the standard markup language for creating Web pages
 - HTML describes the structure of a Web page
@@ -97,18 +305,18 @@
 - HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
 - Browsers do not display the HTML tags, but use them to render the content of the page
 - HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages
-- HTML is not a programming language, but a markup language </Pre>
-    
-    <a href="#top">Back to Top</a>
+- HTML is not a programming language, but a markup language </pre>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-    
-    
-    <!-- Content Structure-->
-        
-    
-    <h2 id="Structure">HTML Document Structure</h2>
-        <p>An HTML document has the following basic structure...</p>
-    <Pre>
+        <!-- Content Structure-->
+        <div class="card" id="Structure">
+            <div class="card-head">
+                <div class="icon-circle icon-structure">🏗️</div>
+                <h2>HTML Document Structure</h2>
+            </div>
+            <p>An HTML document has the following basic structure...</p>
+            <pre>
 คำอธิบาย:
     &lt;!DOCTYPE html&gt;: ระบุว่าเป็นเอกสาร HTML5
     &lt;html&gt;: เป็นรากของเอกสาร HTML ทั้งหมด
@@ -121,42 +329,54 @@
     แอตทริบิวต์ (Attributes): คุณสมบัติของแท็ก
     - ใช้เพื่อกำหนดคุณสมบัติเพิ่มเติม เช่น href, src, width, height
 ตัวอย่าง: &lt;h1&gt;Hello, World!&lt;/h1&gt;
-    &lt;img src="image.jpg" alt="A description of the image"&gt; </Pre>
-    
-    <a href="#top">Back to Top</a>
+    &lt;img src="image.jpg" alt="A description of the image"&gt; </pre>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-<!-- Heading -->
-    <h2 id="Heading">Heading</h2>
-    <h3>workshop</h3>
-    <p>HTML headings are defined with the &lt;h1&lt; to &lt;h6&lt; tags...</p>
-    <a href="w03-01heading.html">Workshop 1</a>
-    <a href="w03-02heading.html">| Workshop 2</a>
-        <pre>
+        <!-- Heading -->
+        <div class="card" id="Heading">
+            <div class="card-head">
+                <div class="icon-circle icon-heading">🔤</div>
+                <h2>Heading</h2>
+            </div>
+            <div class="workshop-badges">
+                <a href="w03-01heading.html">Workshop 1</a>
+                <a href="w03-02heading.html">Workshop 2</a>
+            </div>
+            <p>HTML headings are defined with the &lt;h1&lt; to &lt;h6&lt; tags...</p>
+            <pre>
     - &lt;h1&gt;: Heading 1
     - &lt;h2&gt;: Heading 2
     - &lt;h3&gt;: Heading 3
     - &lt;h4&gt;: Heading 4
     - &lt;h5&gt;: Heading 5
     - &lt;h6&gt;: Heading 6</pre>
-    
-    <a href="">Back to Top</a>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
+        <!-- Paragraph -->
+        <div class="card" id="Paragraph">
+            <div class="card-head">
+                <div class="icon-circle icon-paragraph">✏️</div>
+                <h2>Paragraph</h2>
+            </div>
+            <div class="workshop-badges"><span>workshop</span></div>
+            <p>HTML paragraphs are defined with the &lt;p&gt; tag...</p>
+            <pre>- &lt;p&gt;: Paragraph</pre>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-<!-- Paragraph -->
-    <h2 id="Paragraph">Paragraph</h2>
-    <P>workshop</P>
-    <P>HTML paragraphs are defined with the &lt;p&gt; tag...</P>
-    <pre>- &lt;p&gt;: Paragraph</pre>
-    <a href="">Back to Top</a>
-
-
-
-
-<!-- Text Formatting -->
-    <h2 id="TextFormatting">Text Formatting</h2>
-    <h3><a href="W04-01-formating.html">workshop</a></h3>
-    <p>HTML provides various elements to format text...</p>
-    <pre>
+        <!-- Text Formatting -->
+        <div class="card" id="TextFormatting">
+            <div class="card-head">
+                <div class="icon-circle icon-format">🎨</div>
+                <h2>Text Formatting</h2>
+            </div>
+            <div class="workshop-badges">
+                <a href="W04-01-formating.html">workshop</a>
+            </div>
+            <p>HTML provides various elements to format text...</p>
+            <pre>
     - &lt;h1&gt; to &lt;h6&gt;: Headings
     - &lt;p&gt;: Paragraph
     - &lt;pre&gt;: Preformatted text
@@ -166,8 +386,8 @@
     - &lt;em&gt;: Emphasized text
     - &lt;u&gt;: Underline text
     - &lt;ins&gt;: Inserted text
-    
-    
+
+
     - &lt;del&gt;: Deleted text
     - &lt;s&gt;: Strikethrough text
     - &lt;strike&gt;: Strikethrough text
@@ -179,14 +399,20 @@
     - &lt;blockquote&gt;: Block quotation
     - &lt;q&gt;: Inline quotation
     - &lt;code&gt;: Code snippet</pre>
-    <a href="">Back to Top</a>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-
-<!-- Creating Links -->
-    <h2 id="Creating Links">Creating Links</h2>
-    <h3><a href="W06_01_link-image.html">workshop</a></h3>
-    <p>HTML links are defined with the &lt;a&gt; tag...</p>
-    <pre>
+        <!-- Creating Links -->
+        <div class="card" id="Creating Links">
+            <div class="card-head">
+                <div class="icon-circle icon-links">🔗</div>
+                <h2>Creating Links</h2>
+            </div>
+            <div class="workshop-badges">
+                <a href="W06_01_link-image.html">workshop</a>
+            </div>
+            <p>HTML links are defined with the &lt;a&gt; tag...</p>
+            <pre>
 - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
 - The href attribute specifies the URL of the page the link goes to
 - The target attribute specifies where to open the linked document
@@ -208,15 +434,18 @@
 - Download links:
     - Use the download attribute to create a download link
     - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;</pre>
-    <a href="">Back to Top</a>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-
-
-<!-- Lists -->
-    <h2 id="Lists">Lists (Ordered and Unordered)</h2>
-    <h3>workshop</h3>
-    <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
-    <pre>
+        <!-- Lists -->
+        <div class="card" id="Lists">
+            <div class="card-head">
+                <div class="icon-circle icon-lists">📋</div>
+                <h2>Lists (Ordered and Unordered)</h2>
+            </div>
+            <div class="workshop-badges"><span>workshop</span></div>
+            <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
+            <pre>
     - &lt;ul&gt;: Unordered list
     - &lt;ol&gt;: Ordered list
     - &lt;li&gt;: List item
@@ -257,15 +486,18 @@
         - Example: &lt;ol style="list-style-type: lower-alpha;"&gt;
         - Example: &lt;ol style="list-style-type: upper-roman;"&gt;
         - Example: &lt;ol style="list-style-type: lower-roman;"&gt;</pre>
-    <a href="">Back to Top</a>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-
-
-<!-- Adding Images -->
-    <h2 id="Adding Images">Adding Images</h2>
-    <h3>workshop</h3>
-    <p>HTML images are defined with the &lt;img&gt; tag...</p>
-    <pre>
+        <!-- Adding Images -->
+        <div class="card" id="Adding Images">
+            <div class="card-head">
+                <div class="icon-circle icon-images">🖼️</div>
+                <h2>Adding Images</h2>
+            </div>
+            <div class="workshop-badges"><span>workshop</span></div>
+            <p>HTML images are defined with the &lt;img&gt; tag...</p>
+            <pre>
     - &lt;img src="url" alt="description"&gt;
     - The src attribute specifies the URL of the image
     - The alt attribute provides a description of the image
@@ -308,30 +540,37 @@
             height: 150px;
             object-fit: cover;
             }</pre>
-    <a href="">Back to Top</a>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-                                        
+        <!-- Creating Tables -->
+        <div class="card" id="Creating Tables">
+            <div class="card-head">
+                <div class="icon-circle icon-tables">📊</div>
+                <h2>Creating Tables</h2>
+            </div>
+            <div class="workshop-badges"><span>Workshop 1</span>
+                <span>Workshop 2</span>
+            </div>
+            <p>HTML tables are defined with the &lt;table&gt; tag...</p>
+            <pre>
+                - &lt;table&gt;: Table
+                - &lt;tr&gt;: Table row
+                - &lt;th&gt;: Table header
+                - &lt;td&gt;: Table data/cell
+            </pre>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-<!-- Creating Tables -->
-    <h2 id="Creating Tables">Creating Tables</h2>
-    <h3>Workshop 1
-Workshop 2</h3>
-    <p>HTML tables are defined with the &lt;table&gt; tag...</p>
-    <pre>
-    - &lt;table&gt;: Table
-    - &lt;tr&gt;: Table row
-    - &lt;th&gt;: Table header
-    - &lt;td&gt;: Table data/cell</pre>
-    <a href="">Back to Top</a>
-
-
-
-<!-- HTML Forms -->
-    <h2 id="HTML Forms">HTML Forms</h2>
-    <h3>Workshop 1
-Workshop 2</h3>
-    <p>HTML forms are defined with the &lt;form&gt; tag...</p>
-    <pre>หัวข้อเกี่ยวกับฟอร์ม
+        <!-- HTML Forms -->
+        <div class="card" id="HTML Forms">
+            <div class="card-head">
+                <div class="icon-circle icon-forms">📝</div>
+                <h2>HTML Forms</h2>
+            </div>
+            <div class="workshop-badges"><span>Workshop 1</span><span>Workshop 2</span></div>
+            <p>HTML forms are defined with the &lt;form&gt; tag...</p>
+            <pre>หัวข้อเกี่ยวกับฟอร์ม
     1. โครงสร้างพื้นฐานของฟอร์ม
 
         - &lt;form>: ใช้เป็นตัวครอบข้อมูลในฟอร์ม
@@ -348,7 +587,7 @@ Workshop 2</h3>
         - &lt;optgroup>: กลุ่มตัวเลือก
 
         - &lt;fieldset> และ &lt;legend>: กลุ่มข้อมูลที่เกี่ยวข้อง
-    
+
     3. ปุ่มในฟอร์ม
 
         - &lt;button>: ปุ่มทั่วไป
@@ -376,40 +615,53 @@ Workshop 2</h3>
 
         - การส่งข้อมูลไปยังเซริฟ์เวอร์
         - การใช ้JavaScript (เชน่ onsubmit)</pre>
-    <a href="">Back to Top</a>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
+        <!-- Embedding Multimedia -->
+        <div class="card" id="Embedding Multimedia">
+            <div class="card-head">
+                <div class="icon-circle icon-media">🎬</div>
+                <h2>Embedding Multimedia (Audio & Video)</h2>
+            </div>
+            <pre></pre>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-<!-- Embedding Multimedia -->
-    <h2 id="Embedding Multimedia">Embedding Multimedia (Audio & Video)</h2>
-    <pre></pre>
-    <a href="">Back to Top</a>
-
-
-
-
-<!-- Semantic HTML -->
-    <h2 id="Semantic HTML">Semantic HTML</h2>
-    <p>Semantic HTML elements clearly define the content of a web page...</p>
-    <pre>
+        <!-- Semantic HTML -->
+        <div class="card" id="Semantic HTML">
+            <div class="card-head">
+                <div class="icon-circle icon-semantic">🏷️</div>
+                <h2>Semantic HTML</h2>
+            </div>
+            <p>Semantic HTML elements clearly define the content of a web page...</p>
+            <pre>
     - &lt;header&gt;: Defines a header for a document or section
     - &lt;nav&gt;: Defines navigation links
     - &lt;section&gt;: Defines a section in a document
     - &lt;article&gt;: Defines an article
     - &lt;aside&gt;: Defines content aside from the page content
     - &lt;footer&gt;: Defines a footer for a document or section</pre>
-    <a href="">Back to Top</a>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-<!-- My Workshop -->
-    <h2 id="My Workshop">My Workshop</h2>
-    <ul><li>Workshop 1</li><li>Workshop 2</li></ul>
-    <a href="">Back to Top</a>
+        <!-- My Workshop -->
+        <div class="card" id="My Workshop">
+            <div class="card-head">
+                <div class="icon-circle icon-workshop">🎯</div>
+                <h2>My Workshop</h2>
+            </div>
+            <div class="workshop-badges"><span>Workshop 1</span><span>Workshop 2</span></div>
+            <a class="back-top" href="#top">Back to Top</a>
+        </div>
 
-    <hr>
-    <div class="text-center">
-        <a href="https://www.w3schools.com/html/default.asp">Learn more about HTML </a>
-        <p >&copy; 2026 Created by: 684259027 : prasertsil Soontornprasartporn</p>
-    </div>
+        <hr>
+        <footer class="text-center">
+            <a href="https://www.w3schools.com/html/default.asp">Learn more about HTML</a>
+            <p>&copy; 2026 Created by: 684259027 : prasertsil Soontornprasartporn</p>
+        </footer>
 
+    </main>
 
-    </body>
-        </html>
+</body>
+</html>

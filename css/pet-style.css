@@ -31,7 +31,7 @@ body {
     /* สีหลักของเว็บ */
 
     --primary-color: rgb(255, 255, 255) ;
-    --promary-bark-color:rgb(17, 0, 255);
+    --promary-bark-color:rgb(124, 115, 250);
     --seconbary-color:rgb(123, 67, 255);
 
 
@@ -40,17 +40,32 @@ body {
     --text-color: rgb(65, 62, 62) ;
     --muted-text-color:rgb(75, 67, 67);
 
-    --nav-text-color:rgb(134, 134, 134);
+    --nav-text-color:rgb(168, 168, 168);
     --light-text-color:rgb(255, 255, 255);
+
+    --blue-text-color: rgb(0, 0, 255);
+    --purple-text-color:rgb(255, 0, 255);
+    --green-txte-color:rgb(25, 124, 5);
+    --orange-txet-color:rgb(255, 102, 0);
+
+
 
 
     /* สีพื้นหลัง */
     --btn-bg-color:rgb(219, 129, 255);
     --footer-bg-color:black;
 
+    --white-bg-color: rgb(255, 255, 255);
+
+    --blue-bg-color:rgb(169, 193, 255);
+    --purple-bg-color:rgb(208, 181, 252);
+    --green-bg-color: rgb(97, 255, 173);
+    --orange-bg-color:rgb(252, 194, 128);
+
+
 
     /* สีเงา */
-    --header-shadow: 0 4px 8px rgb(163, 170, 121);
+    --header-shadow: 0 4px 8px rgb(255, 255, 255);
     --card-shadow: 0 3px 8px rgb(121, 159, 170);
 
 
@@ -222,3 +237,99 @@ footer {
 /*===========================
            Responsive
 =============================*/
+
+/*===========================
+        Info Section
+=============================*/
+
+.info-section {
+
+    background-color: var(--white-bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 1rem;
+
+    padding: 1.5rem;
+    margin: 2rem auto;
+}
+
+.info-title {
+
+
+    border-radius: 0.75rem;
+
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+.info-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.info-card {
+
+
+    border-radius: 0.75rem;
+    box-shadow: var(--card-shadow);
+
+    padding: 1.25rem;
+    transform: translateY(-10px);
+
+}
+
+
+.info-card .card-title {
+
+    color: var(--blue-text-color );
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.info-card p {
+
+    color: var(--muted-text-color);
+    font-size: 0.9rem;
+}
+
+.info-blue {
+    background-color: var(--blue-bg-color);
+}
+
+.info-text-blue {
+    color: var(--blue-text-color);
+}
+
+.info-purple {
+    background-color: var(--purple-bg-color);
+}
+
+.info-text-purple{
+    color: var(--purple-text-color);
+}
+
+.info-green {
+    background-color: var(--green-bg-color);
+}
+
+.info-text-green {
+    color: var(--green-txte-color);
+}
+
+.info-orange {
+    background-color: var(--orange-bg-color);
+}
+
+.info-text-orange{
+    color: var(--orange-txet-color);
+}

@@ -41,10 +41,9 @@ body {
   --green-txte-color: rgb(25, 124, 5);
   --orange-txet-color: rgb(255, 102, 0);
 
-
-  --red2-text-color : red ;
-  --green2-text-color : green;
-  --blue2-text-color : blue;
+  --red2-text-color: red;
+  --green2-text-color: green;
+  --blue2-text-color: blue;
 
   /* สีพื้นหลัง */
   --btn-bg-color: rgb(219, 129, 255);
@@ -57,10 +56,9 @@ body {
   --green-bg-color: rgb(97, 255, 173);
   --orange-bg-color: rgb(252, 194, 128);
 
-  --muted-bg-color:rgba(221, 217, 217, 0.76);
+  --muted-bg-color: rgba(221, 217, 217, 0.76);
 
   --info-blue-ba: rgba(0, 194, 253, 0.322);
-
 
   /* สีเงา */
   --header-shadow: 0 4px 8px rgb(255, 255, 255);
@@ -113,7 +111,6 @@ body {
 }
 
 .category-nav label {
-
   background-color: rgb(245, 245, 240);
   color: var(--nav-text-color);
 
@@ -125,8 +122,6 @@ body {
 
   transition: transform 0.3s;
   display: inline-block;
-
-
 }
 
 .category-nav label:hover {
@@ -134,7 +129,6 @@ body {
 }
 
 .filter-radio {
-
   /* display:none; */
 
   position: absolute;
@@ -143,17 +137,15 @@ body {
 
   overflow: hidden;
   clip-path: inset(50%);
-
 }
 
 /* ใส่สีให้กับ label ที่เลือก */
-#filter-all:checked ~ .category-nav label[for="filter-all"] ,
-#filter-dog:checked ~ .category-nav label[for="filter-dog"] ,
-#filter-cat:checked ~ .category-nav label[for="filter-cat"] ,
-#filter-bird:checked ~ .category-nav label[for="filter-bird"] ,
-#filter-fish:checked ~ .category-nav label[for="filter-fish"] ,
-#filter-small-pet:checked ~ .category-nav label[for="filter-small-pet"] 
-{
+#filter-all:checked ~ .category-nav label[for="filter-all"],
+#filter-dog:checked ~ .category-nav label[for="filter-dog"],
+#filter-cat:checked ~ .category-nav label[for="filter-cat"],
+#filter-bird:checked ~ .category-nav label[for="filter-bird"],
+#filter-fish:checked ~ .category-nav label[for="filter-fish"],
+#filter-small-pet:checked ~ .category-nav label[for="filter-small-pet"] {
   background-color: var(--seconbary-color);
   color: var(--light-text-color);
 }
@@ -164,36 +156,32 @@ body {
 }
 
 /* เปิดหมวดหมู่ */
-#filter-all:checked ~ main .show-all ,
-#filter-dog:checked ~ main .show-dog ,
-#filter-cat:checked ~ main .show-cat ,
-#filter-bird:checked ~ main .show-bird ,
-#filter-fish:checked ~ main .show-fish ,
-#filter-small-pet:checked ~ main .show-small-pet 
-{
+#filter-all:checked ~ main .show-all,
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small-pet:checked ~ main .show-small-pet {
   display: inline;
 }
 
 /* ช่อนการ์ดสัตว์ */
-#filter-dog:checked ~ main .pet-card ,
-#filter-cat:checked ~ main .pet-card ,
-#filter-bird:checked ~ main .pet-card ,
-#filter-fish:checked ~ main .pet-card ,
-#filter-small-pet:checked ~ main .pet-card 
-{
+#filter-dog:checked ~ main .pet-card,
+#filter-cat:checked ~ main .pet-card,
+#filter-bird:checked ~ main .pet-card,
+#filter-fish:checked ~ main .pet-card,
+#filter-small-pet:checked ~ main .pet-card {
   display: none;
 }
 
 /* โชว์การ์ดสัตว์ */
-#filter-dog:checked ~ main .show-dog ,
-#filter-cat:checked ~ main .show-cat ,
-#filter-bird:checked ~ main .show-bird ,
-#filter-fish:checked ~ main .show-fish ,
-#filter-small-pet:checked ~ main .show-small-pet 
-{
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small-pet:checked ~ main .show-small-pet {
   display: block;
 }
-
 
 nav a.active {
   background-color: var(--btn-bg-color);
@@ -211,7 +199,7 @@ nav a.active {
 
 .pet-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%,300px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 1.5rem;
 }
 
@@ -261,16 +249,14 @@ nav a.active {
 
   padding: 1.5rem;
   margin: 2rem auto;
-
 }
 
 .form-radio h2 {
   text-align: center;
   color: var(--blue-text-color);
-
 }
 
-.form-radio p{
+.form-radio p {
   text-align: center;
   color: var(--muted-text-color);
   margin-bottom: 0.8rem;
@@ -285,7 +271,7 @@ nav a.active {
 .form-radio legend {
   padding: 0 0.5rem;
   color: var(--primary-color);
-  font-weight: bold
+  font-weight: bold;
 }
 
 .radio-option {
@@ -303,17 +289,15 @@ nav a.active {
   border-radius: 1rem;
 
   cursor: pointer;
-
 }
 
 .radio-item input {
   accent-color: var(--seconbary-color);
 }
 
-.radio-item input:checked + label  {
+.radio-item input:checked + label {
   background-color: var(--seconbary-color);
   color: var(--light-text-color);
-
 }
 
 .reset-btn {
@@ -324,17 +308,11 @@ nav a.active {
   border-radius: 0.5rem;
   border: none;
 
-
   cursor: pointer;
 
   display: block;
   margin: 1.5rem auto 0;
-   
- 
-
-  
 }
-
 
 /*===========================
           Footer
@@ -350,9 +328,6 @@ footer {
   margin-top: 2rem;
 }
 
-
-
-
 /*===========================
         ปุ่มซ่อน แสดง รายละเอียด
 =============================*/
@@ -362,16 +337,21 @@ footer {
   margin-block: 1rem;
 }
 
-.pet-info li{
+.pet-info li {
   margin-bottom: 0.5rem;
 }
 
-.info-lifespan { color: var(--red2-text-color);}
+.info-lifespan {
+  color: var(--red2-text-color);
+}
 
-.info-size { color: var(--blue2-text-color);}
+.info-size {
+  color: var(--blue2-text-color);
+}
 
-.info-temperament { color: var(--green2-text-color);}
-
+.info-temperament {
+  color: var(--green2-text-color);
+}
 
 .pet-details summary {
   list-style: none;
@@ -379,7 +359,7 @@ footer {
 
 .pet-btn {
   background-color: var(--primary-color);
-  padding: 0.5rem ;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: var(--card-shadow);
 
@@ -389,7 +369,6 @@ footer {
   cursor: pointer;
 
   transition: transform 0.5s;
-
 }
 
 .pet-btn:hover {
@@ -397,34 +376,37 @@ footer {
   transform: translateY(-6px);
 }
 
-
-
-.hide-detail {display: none;}
+.hide-detail {
+  display: none;
+}
 
 .pet-details[open] .hide-detail {
   display: inline;
 }
 
-.pet-details[open] .show-detail {display: none;}
-
+.pet-details[open] .show-detail {
+  display: none;
+}
 
 .pet-details-body {
-  margin-top: 1rem ;
+  margin-top: 1rem;
 
   animation: appear 0.25s ease-out;
 }
 @keyframes appear {
-  from {opacity: 0 ; transform: translateY(55px);}
-  to {opacity: 1; transform: translateY(0px); }
+  from {
+    opacity: 0;
+    transform: translateY(55px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
-.pet-details-body section + section{
-  margin-top: 1rem ;
+.pet-details-body section + section {
+  margin-top: 1rem;
 }
-
-
-
-
 
 /*===========================
         Info Section
@@ -457,8 +439,7 @@ footer {
 
   /* แบบนี้ถ้าจอเล็กกว่า 250px กล่องจะลันการ์ดออกมา */
 
-  grid-template-columns: repeat(auto-fit, minmax(min(100%,250px), 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 
   gap: 1.25rem;
 }
@@ -516,14 +497,13 @@ footer {
   color: var(--orange-txet-color);
 }
 
-
 /*===========================
           Table
 =============================*/
 
 .pet-table {
   /* border: 1px solid red; */
-  
+
   border-collapse: collapse;
   margin-top: 2rem;
   width: 100%;
@@ -539,7 +519,6 @@ footer {
   caption-side: top;
 }
 
-
 .pet-table td,
 .pet-table th {
   border: 1px solid rgb(0, 0, 0);
@@ -548,13 +527,11 @@ footer {
   vertical-align: top;
 
   overflow-wrap: break-word;
-
 }
 
 .pet-table thead th {
   background-color: var(--primary-color);
   color: var(--light-text-color);
-
 }
 
 .pet-table tbody th {
@@ -563,17 +540,20 @@ footer {
 
   text-align: left;
 
-  white-space: nowrap ;
+  white-space: nowrap;
 }
-
 
 /* .pet-table thead th:nth-child(1) { width: 300px;} */
 /* .pet-table thead th:nth-child(2) { width: 400px;} */
-.pet-table thead th:nth-child(3) { width: 200px;}
-.pet-table thead th:nth-child(4) { width: 400px;}
-.pet-table thead th:nth-child(5) { width: 200px;}
-
-
+.pet-table thead th:nth-child(3) {
+  width: 200px;
+}
+.pet-table thead th:nth-child(4) {
+  width: 400px;
+}
+.pet-table thead th:nth-child(5) {
+  width: 200px;
+}
 
 .pet-table tbody tr:nth-child(even) {
   background-color: rgb(208, 232, 253);
@@ -583,40 +563,25 @@ footer {
   background-color: rgb(185, 239, 255);
 }
 
-
 .table-responsive {
   width: 100%;
   overflow-x: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*===========================
            Responsive
 =============================*/
 /* tablet */
 @media (max-width: 922px) {
-    .pet-grid {
-      /* grid-template-columns: repeat(2,1fr); */
-
+  .pet-grid {
+    /* grid-template-columns: repeat(2,1fr); */
   }
 }
 
 /* mobil */
 @media (max-width: 768px) {
-    .pet-grid {
-      /* grid-template-columns: repeat(1,1fr); */
-
+  .pet-grid {
+    /* grid-template-columns: repeat(1,1fr); */
   }
 
   .category-nav label {
@@ -633,5 +598,4 @@ footer {
   .info-grid {
     /* grid-template-columns: repeat(2, 1fr); */
   }
-
 }

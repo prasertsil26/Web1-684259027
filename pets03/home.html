@@ -37,26 +37,26 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">ทั้งหมด</a>
+                            <button type="button" class="nav-link active" aria-current="page" onclick="selectCategory('all', this)">ทั้งหมด</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">สุนัข</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">แมว</a>
+                            <button type="button" class="nav-link" href="#" onclick="selectCategory('สุนัข', this)">สุนัข</button>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">นก</a>
+                            <button type="button" class="nav-link" href="#" onclick="selectCategory('แมว', this)">แมว</button>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ปลา</a>
+                            <button type="button" class="nav-link" href="#" onclick="selectCategory('นก', this )">นก</button>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">สัตว์ขนาดเล็ก</a>
+                            <button type="button" class="nav-link" href="#" onclick="selectCategory('ปลา', this)">ปลา</button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button type="button" class="nav-link" href="#" onclick="selectCategory('สัตว์เลี้ยงขนาดเล็ก', this)">สัตว์เลี้ยงขนาดเล็ก</button>
                         </li>
 
                         <!-- <li class="nav-item dropdown">
@@ -102,33 +102,6 @@
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"
         data-bs-interval="1000">
 
-        <!-- ปุ่มบอกลำดับภาพ -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- รูปภาพใน carousel -->
         <div class="carousel-inner">
@@ -152,6 +125,34 @@
                     class="d-block w-100" alt="กระต่ายสีขาว">
             </div>
 
+                    <!-- ปุ่มบอกลำดับภาพ -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+
+                <!-- ปุ่มเลื่อน หน้า-หลัง -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
 
         </div>
 
@@ -160,7 +161,7 @@
 
                 <!-- ปุ่มเลือกหมวดหมู่สัตว์ -->
 
-                <div class="category-filter" id="categoryFilter">
+                <div class="category-filter mt-4" id="categoryFilter">
 
                     <!-- javascript จะ rander เนื้อหาตรงนี้ -->
 
@@ -188,19 +189,7 @@
         </main>
 
 
-        
-        <!-- ปุ่มเลื่อน หน้า-หลัง -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    
 
 
     <!-- info-section -->
